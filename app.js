@@ -3,10 +3,12 @@ const song = document.querySelector('.fields .song');
 const searchBtn = document.querySelector('.fields .search');
 const lyricsCont = document.querySelector('.lyrics');
 
+/////still need to figure out how to throw alert when 404 response for incorrect inputs
+
 
 function searchLyrics() {
     //clear lyrics container
-    lyricsCont.textContent = "";
+    lyricsCont.innerHTML = "";
 
 
     let artistInput = artist.value;
