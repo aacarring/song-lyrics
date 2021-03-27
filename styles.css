@@ -5,6 +5,7 @@
 }
 
 body {
+  background: #FFDFDE;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -12,36 +13,66 @@ body {
   width: 100vw;
   height: 100vh;
   text-align: center;
+  font-family: monospace;
 }
 body header {
+  box-shadow: 2px 2px 10px grey;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 2px solid black;
   width: 50vw;
   min-width: 280px;
   height: 15vh;
 }
+body header h1 {
+  font-family: "Train One", cursive;
+  font-weight: 400;
+}
+body header span {
+  margin: 0px 20px;
+}
 body .fields {
+  box-shadow: 2px 2px 10px grey;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 2px solid black;
-  width: 75vw;
-  min-width: 300px;
+  width: 50vw;
+  min-width: 280px;
   height: 30vh;
 }
-body .lyrics {
+body .fields .search {
+  width: 100px;
+  padding: 10px;
   border: 2px solid black;
+  border-radius: 15px;
+  outline: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+body .fields .search:hover {
+  cursor: pointer;
+  color: #FFDFDE;
+  background: black;
+}
+body .lyrics {
+  box-shadow: 2px 2px 10px grey;
+  border-radius: 15px;
   width: 50vw;
   min-width: 280px;
   overflow: scroll;
   height: 50vh;
   display: flex;
   flex-direction: column;
-  padding: 2.5vh;
+  padding: 10px;
+  line-height: 2;
+}
+body .lyrics span {
+  font-size: 2em;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
