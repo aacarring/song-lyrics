@@ -27,6 +27,7 @@ function searchLyrics() {
         fetch(`https://api.lyrics.ovh/v1/${artist}/${song}`)
             .then(response => response.json())
             .then(data => {
+                console.log(data);
                 let lyrics = data.lyrics;
                 lyricsCont.innerHTML += lyrics.replace(/([A-Z]+)/g, ",$1").replace(/,/g," <br />").split(",");
             });
